@@ -1,0 +1,90 @@
+.sections_green {
+    min-height: 600px;
+    width: 100%;
+    padding: 55px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: $green;
+    z-index: 5;
+    &::after {
+        content: url('../images/pattern/leaf-category-right-1.png');
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .list {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            width: 75%;
+            font-size: 28px;
+            position: absolute;
+            font-weight: normal;
+            top: 20px;
+            left: 20px;
+        }
+        .item_1 {
+            margin-right: 25px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .item_2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            .item {
+                position: relative;
+                h3 {
+                    font-size: 21px;
+                }
+            }
+        }
+        .item_3 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin-left: 25px;
+        }
+
+        .item_1 , .item_2 .item , .item_3 {
+            h3 {
+                cursor: pointer;
+                transition: .5s all;
+            }
+            position: relative;
+            &::after {
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: black;
+                opacity: 0;
+                content:'';
+                transition: .3s all;
+            }
+            &:hover {
+                &::after {
+                    opacity: .5;
+                }
+                h3 {
+                    z-index: 1000;
+                    right: auto;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50% , -50%);
+                    color: white;
+                }
+            }
+        }
+    }
+}

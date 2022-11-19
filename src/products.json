@@ -1,0 +1,147 @@
+{
+    "products":
+    [
+     
+
+        {
+            "img":"./src/Products/recommend_2.jpg",
+            "name":"  Qayçı 'Maped' E-4682",
+            "price":"2.00",
+            "isNew":false,
+            "isRecommend":true,
+            "type":"scissor"
+        },
+
+        {
+            "img":"./src/Products/recommend_3.jpg",
+            "name":"  TextMarker 'Maped/Grosso' 9684",
+            "price":" 50.00",
+            "isNew":false,
+            "isRecommend":false,
+            "type":"marker"
+        },
+
+        {
+            "img":"./src/Products/recommend_1.png",
+            "name":"Qələm 'Gigis' 9684",
+            "price":"0.40",
+            "isNew":true,
+            "isRecommend":false,
+            "type":"pen"
+        },
+
+        {
+            "img":"./src/Products/recommend_4.jpg",
+            "name":" Stepler 'Maped' 710",
+            "price":" 4.50",
+            "isNew":true,
+            "isRecommend":false,
+            "type":"stepler"
+        },
+        {
+            "img":"./src/Products/recommend_2.jpg",
+            "name":"  Qayçı 'Maped' E-4682",
+            "price":"2.00",
+            "isNew":false,
+            "isRecommend":true,
+            "type":"scissor"
+        },
+
+        {
+            "img":"./src/Products/recommend_3.jpg",
+            "name":"  TextMarker 'Maped/Grosso' 9684",
+            "price":" 50.00",
+            "isNew":false,
+            "isRecommend":false,
+            "type":"marker"
+        },
+
+        {
+            "img":"./src/Products/recommend_1.png",
+            "name":"Qələm 'Gigis' 9684",
+            "price":"0.40",
+            "isNew":true,
+            "isRecommend":false,
+            "type":"pen"
+        },
+
+        {
+            "img":"./src/Products/recommend_4.jpg",
+            "name":" Stepler 'Maped' 710",
+            "price":" 4.50",
+            "isNew":true,
+            "isRecommend":false,
+            "type":"stepler"
+        },
+        {
+            "img":"./src/Products/recommend_2.jpg",
+            "name":"  Qayçı 'Maped' E-4682",
+            "price":"2.00",
+            "isNew":false,
+            "isRecommend":true,
+            "type":"scissor"
+        },
+
+        {
+            "img":"./src/Products/recommend_3.jpg",
+            "name":"  TextMarker 'Maped/Grosso' 9684",
+            "price":" 50.00",
+            "isNew":false,
+            "isRecommend":false,
+            "type":"marker"
+        },
+
+        {
+            "img":"./src/Products/recommend_1.png",
+            "name":"Qələm 'Gigis' 9684",
+            "price":"0.40",
+            "isNew":true,
+            "isRecommend":false,
+            "type":"pen"
+        },
+
+        {
+            "img":"./src/Products/recommend_4.jpg",
+            "name":" Stepler 'Maped' 710",
+            "price":" 4.50",
+            "isNew":true,
+            "isRecommend":false,
+            "type":"stepler"
+        },
+        {
+            "img":"./src/Products/recommend_2.jpg",
+            "name":"  Qayçı 'Maped' E-4682",
+            "price":"2.00",
+            "isNew":false,
+            "isRecommend":true,
+            "type":"scissor"
+        },
+
+        {
+            "img":"./src/Products/recommend_3.jpg",
+            "name":"  TextMarker 'Maped/Grosso' 9684",
+            "price":" 50.00",
+            "isNew":false,
+            "isRecommend":false,
+            "type":"marker"
+        },
+
+        {
+            "img":"./src/Products/recommend_1.png",
+            "name":"Qələm 'Gigis' 9684",
+            "price":"0.40",
+            "isNew":true,
+            "isRecommend":false,
+            "type":"pen"
+        },
+
+        {
+            "img":"./src/Products/recommend_4.jpg",
+            "name":" Stepler 'Maped' 710",
+            "price":" 4.50",
+            "isNew":true,
+            "isRecommend":false,
+            "type":"stepler"
+        }
+    ]
+}

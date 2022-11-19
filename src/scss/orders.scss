@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    overflow-x: hidden; 
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    height: auto;
+    overflow-x: hidden; 
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 50px;
+}
+
+@import './universal/color';
+@import './universal/button';
+@import './universal/menu_overlay';
+@import './universal/search_overlay';
+@import './universal/card';
+@import './universal/header';
+@import './universal/footer';
+@import './universal/title';
+@import 'universal/sort_types';
+
+
+.orders {
+    padding: 80px 0;
+    .order_types {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .active_type {
+            background: $green !important;
+            color:white !important;
+        }
+        .type {
+            cursor: pointer;
+            transition: .3s all;
+            text-align: center;
+            padding: 18px 0;
+            width: 100%;
+            background: #F8F8F8;
+            color:black;
+            &:hover {
+                background: $green !important;
+                color:white !important;
+            }
+        }
+    }
+
+    table {
+        text-align: center;
+        margin-top: 25px;
+        width: 100%;
+        border-spacing: 0;
+        thead {
+            tr {
+                color:#646866;
+                background: #F8F8F8;
+                th {
+                    border-right: 2px #E4E4E4 solid;
+                    padding: 15px;
+                    font-weight: 400;
+                    &:nth-last-child(1) {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+        tbody {
+            text-align: center;
+            tr {
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+                color:#646866;
+                td {
+                    span {
+                        font-weight: 500;
+                        display: none;
+                    }
+                    border: 2px #FAFAFA solid;
+                    padding: 15px;
+                    font-weight: 300;
+                    &:nth-last-child(1) {
+                        border-right: none;
+                    }
+                    button {
+                        cursor: pointer;
+                        color:#646866;
+                        padding: 15px 20px;
+                        border-radius: 4px;
+                        border: 1px #CCCCCC solid ;
+                        background: transparent;
+                        transition: .3s all;
+                        &:hover {
+                            background: $green;
+                            border: none;
+                            color: white;
+                        }
+                    }
+                    .status_bar {
+                        margin: 0 auto;
+                        width: 65%;
+                        padding: 2px;
+                        background: $green;
+                        color:white;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+  
+}
+
+@media(max-width: 1199px) {
+    // .orders .sort_types select {
+    //     width: 100%;
+    // }
+    .orders table tbody tr td .status_bar {
+        width: 100%;
+    }
+}
+
+@media(max-width: 975px) {
+    .orders table tbody tr td {
+        padding: 5px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .orders table tbody tr td button {
+        padding: 10px 15px;
+    }
+    .orders table tbody tr img {
+        width: 150px;
+        height: 150px;
+
+    }
+    thead {
+        display: none;
+    }
+    .orders table tbody tr td .status_bar {
+        width: 25%;
+    }
+    .orders table tbody tr td span {
+        display: block;
+    }
+    tbody {
+        tr {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media(max-width: 575px) {
+    // .orders .order_types {
+    //     flex-direction: column;
+    // }
+    // .orders .sort_types {
+    //     flex-direction: column;
+    //     .type {
+    //         &:nth-child(2) {
+    //             margin-top: 20px;
+    //         }
+    //     }
+    // }
+}
+
+
+

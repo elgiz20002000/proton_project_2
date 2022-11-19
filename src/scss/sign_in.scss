@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    overflow-x: hidden; 
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    height: auto;
+    overflow-x: hidden; 
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 50px;
+}
+
+@import './universal/color';
+@import './universal/button';
+@import './universal/menu_overlay';
+@import './universal/search_overlay';
+@import './universal/card';
+@import './universal/header';
+@import './universal/footer';
+@import './universal/title';
+@import './universal/product_page_button';
+
+
+.sign_section {
+    background: $main;
+    padding: 80px 0;
+    .sign {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .item_1 {
+        flex: 0.2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: max-content;
+            padding: 20px 50px;
+            background: white;
+            color: black;
+            border-radius: 8px;
+            border: none;
+            margin-top: 25px;
+            transition: .6s all;
+            cursor: pointer;
+            &:hover {
+                background: $green;
+                color: white;
+            }
+        }
+        img {
+            width: 120px;
+            height: 100px;
+        }
+    }
+    .item_2 {
+        width: 1200px;
+        height: 500px;
+        background: white;
+        border-radius: 500px 0 0 500px;
+        flex: 0.7;
+        text-align: center;
+        position: relative;
+        .wrapper {
+            position: absolute;
+            top: 25%;
+
+        }
+        form {
+            padding: 0 270px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            button {
+                width: max-content;
+                padding: 20px 50px;
+                background: $main;
+                color: white;
+                border-radius: 8px;
+                border: none;
+                margin-top: 25px;
+                transition: .6s all;
+                cursor: pointer;
+                &:hover {
+                    background: $green;
+                    color: white;
+                }
+            }
+            .form-floating {
+                input {
+                    width: 650px;
+                    padding: 17px 10px;
+                    border: 1px #CED4DA solid;
+                    border-radius: 8px;
+                    &:focus {
+                        border: 2px $main solid;
+                    }
+                }
+            }
+            .select_wrapper {
+                margin-top: 15px;
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                color:$green;
+            }
+            .select {  
+                display: flex;
+                align-items:baseline;
+                justify-content: flex-start;
+                input {
+                    height: auto;
+                    width:auto;
+                    margin-right: 5px;
+                }
+            }
+            .password_forget {
+                display: block;
+                a {
+                    color: $green;
+                    text-decoration:underline;
+                }
+            }
+        }
+        h2 {
+            font-size: 35px;
+        }
+    }
+}
+
+
+
+
+
+.menu_btn {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+.search_btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+
+
+@media(max-width: 1199px) {
+    .sign_section .item_2 .wrapper {
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sign_section .item_2 form {
+        padding: 0 150px;
+    }
+    .sign_section .item_2 form  {
+        .form-floating {
+            input {
+                width: 500px ;
+            }
+        }
+    }
+
+}
+
+
+
+@media(max-width: 975px) {
+    .sign_section .item_2 {
+        padding: 0;
+        padding-left: 70px;
+        min-height: 500px;
+        width: 100%;
+    }
+    .sign_section .item_2 form {
+        padding: 0 115px;
+    }
+    .sign_section .item_2 form  {
+        .form-floating {
+            input {
+                width: 400px;
+            }
+        }
+    }
+    .sign_section .item_1 {
+        margin-top: 40px;
+    }
+    .sign_section .sign {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .sign_section .item_2 form {
+        padding: 0 70px;
+        button {
+            width: 70%;
+        }
+    }
+   
+}
+
+
+@media(max-width: 575px) {
+    .wrapper {
+        width: 100%;
+    }
+    .sign_section .item_2 {
+        padding: 0;
+    }
+    .sign_section .item_2 form {
+        padding: 0;
+        button {
+            width: 50%;
+        }
+     .select_wrapper {
+        width: 90%;
+     }   
+    }
+        .sign_section .item_2 form  {
+            .form-floating {
+                width: 100% ;
+                input {
+                    margin: 0 auto;
+                    width: 90%  ;
+                }
+                label {
+                    left: 4%;
+                }
+            }
+        }
+       
+}
+
+
+

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+        <link ty rel="stylesheet" href="src/Convenient-Pagination-Plugin-With-Bootstrap-And-jQuery-UI-Pagination-js/dist/pagination.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="src/css/office_items.min.css">
+        <title>Document</title>
+    </head>
+<body>
+
+    <header>
+        <div class="container">
+         <div class="menu_btn">
+             <img src="src/images/icon/icons8-menu.svg" alt="menu">
+         </div>
+             <div class="top">
+            
+                <button>
+                    <a href="sign_in.html">Daxil ol</a>
+                </button>
+                
+                <button>
+                    <a href="sign_up.html">Qeydiyyat</a>
+                </button>
+             </div>
+             <div class="middle">
+                <a href="index.html">
+                    <img src="./src/images/logo/logo-header.svg" alt="" class="logo">
+                 </a>
+                 <div class="search_input">
+                     <input placeholder="Search" type="text" placeholder="Axtar">
+                 </div>
+                 <div class="icons">
+                    <div class="icon">
+                        <a href="admin.html">
+                         <img src="./src/images/icon/icons8-customer-50.png" alt="cart">
+                        </a>
+                     </div>
+                    <div class="icon">
+                       <a href="basket.html">
+                        <img src="./src/images/general/cart.svg" alt="cart">
+                       </a>
+                    </div>
+                    <div class="icon">
+                        <a href="favorite.html">
+                            <img src="./src/images/general/heart.svg" alt="favorite">
+                        </a>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="bottom">
+ 
+         
+      
+         
+         
+         
+         <div class="ui compact menu">
+             <div class="ui simple dropdown item category_btn">
+               Kateqoriyalar
+               <i class="dropdown icon"></i>
+               <div class="menu">
+                 <div class="item">
+                 <i class="dropdown icon"></i>
+                 Ofis ləvazimatları
+                     <div class="menu">
+                         <div class="item">Qələm "Gigis" 9684</div>
+                         <div class="item">Qayçı "Maped" E-4682</div>
+                         <div class="item">TextMarker "Maped/Grosso" 9684</div>
+                         <div class="item">Stepler "Maped" 710</div>
+                       </div>
+                 </div>
+                 <div class="item">
+                     <i class="dropdown icon"></i>
+                     Qida və İçkilər
+                         <div class="menu">
+                             <div class="item"> Tess 'Ginger Mojito'</div>
+                             <div class="item"> Eti Adicto İntense</div>
+                             <div class="item">Qənd 'Azərşəkər'</div>
+                             <div class="item">Qəhvə 'Mehmüt Efendi'</div>
+                           </div>
+                 </div>
+                 <div class="item">Təsərrüfat malları</div>
+                 <div class="item">Elektron avadanlıq</div>
+                 <div class="item">Dibçək gülləri</div>
+                 <div class="item">Hədiyyəlik</div>
+                 <div class="item">Coffe shop</div>
+               </div>
+             </div>
+           </div>
+         <nav>
+             <ul>
+                <li>
+                    <a href="./about_us.html">Haqqımızda</a>
+                </li>
+                <li>
+                    <a href="new_products.html">Yeni</a>
+                </li>
+                <li>
+                    <a href="">Endirimlər</a>
+                </li>
+                <li>
+                    <a href="">Ən çox satılanlar</a>
+                </li>
+                <li>
+                    <a href="">Şərtlər</a>
+                </li>
+                <li>
+                    <a href="contact.html">Əlaqə</a>
+                </li>
+             </ul>
+         </nav>
+     </div>
+     <div class="search_btn">
+         <img src="src/images/icon/search.svg" alt="">
+     </div>
+     </header>
+
+     <section class="office_items">
+       <div class="container">
+
+            <div class="section_title">
+                <h2>Ofis ləvazimatları</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="office_items_wrapper">
+                <div class="item_1">
+                    <div class="section_title">
+                        <h2>Qiymət filteri</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price_range"></div>
+                    <div class="ranges">
+                        <div class="range">
+                            <input id="start" type="number" readonly  value="0">    
+                        </div>
+                        <div class="range">
+                            <input id="end" type="number" readonly value="500">
+                        </div>
+                    </div>
+
+                    <div class="line_g"></div>
+
+                    <div class="category">
+                        <div class="section_title">
+                            <h2>Alt kateqoriyalar</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="category_list">
+
+                            <div class="item">
+                                <input value="scissor" type="checkbox">
+                                Qayçı
+                            </div>
+
+                            <div class="item">
+                                <input value="marker" type="checkbox">
+                                Marker
+                            </div>
+
+                            <div class="item">
+                                <input value="pen" type="checkbox">
+                                Qələm
+                            </div>
+
+                            <div class="item">
+                                <input value="stepler" type="checkbox">
+                                Stepler
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="line_g"></div>
+
+                        <div class="products_types">
+                            <div class="type">
+                                <input value="new" type="checkbox">
+                                Yeni
+                            </div>
+                            <div class="type">
+                                <input value="recommend" type="checkbox">
+                                Tövsiyyə edilir
+                            </div>
+                        </div>
+
+                        <button class="filter_submit">
+                            Filtrlə
+                        </button>
+                    </div>
+                </div>
+                <div class="item_2">
+
+                    <div class="sort_types">
+                        <div class="type">
+                            Saya görə:
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="type">
+                            Qiymətə görə:
+                            <select>
+                                <option >Seç</option>
+                                <option value="descending">Çoxdan aza</option>
+                                <option value="ascending">Azdan çoxa</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cards_list"></div>
+
+                <div id="pagination-1"></div>
+
+            </div>
+           
+       </div>
+     </section>
+
+
+
+     <footer>
+         <div class="container">
+             <div class="top">
+                 <div class="footer_items">
+                     <div class="item">
+                         <img src="src/images/logo/logo-footer.svg" alt="logo">
+                         <div class="social">
+                             <div class="item_social"><img src="./src/images/icon/icons8-facebook-f.svg" alt="social"></div>
+                             <div class="item_social"><img src="src/images/icon/icons8-instagram.svg" alt="social"></div>
+                         </div>
+                     </div>
+                     <div class="item">
+                         <h3>Kateqoriyalar</h3>
+                         <ul>
+                             <li>
+                                 <a href="office_items.html">Ofis ləvazimatları</a>
+                             </li>
+                             <li>
+                                 <a href="">Qida və içkilər</a>
+                             </li>
+                             <li>
+                                 <a href="">Təsərrüfat malları</a>
+                             </li>
+                             <li>
+                                 <a href="">Elektron avadanlıq</a>
+                             </li>
+                             <li>
+                                 <a href="">Dibçək gülləri</a>
+                             </li>
+                             <li>
+                                 <a href="">Hədiyyəlik</a>
+                             </li>
+                             <li>
+                                 <a href="">Coffe shop</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="item">
+                         <h3>
+                             Menyular
+                         </h3>
+                         <ul>
+                             <li>
+                                 <a href="about_us.html">Haqqımızda</a>
+                             </li>
+                             <li>
+                                 <a href="">Çatdırılma</a>
+                             </li>
+                             <li>
+                                 <a href="">Geri qaytarılma və dəyişdirilmə</a>
+                             </li>
+                             <li>
+                                 <a href="">Əlaqə</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="item">
+                         <h3>
+                             Əlaqə
+                         </h3>
+                         <ul>
+                             <li>
+                                 Tel:<a  href="tel:+994998320777">(994)99 832 07 77</a>
+                             </li>
+                             <li>
+                                 E-mail: info@ios.az
+                             </li>
+                             <li>
+                                Ünvan:Ziya Bünyadov pr, 1965.Çinar Park Biznes Mərkəzi
+                             </li>
+                             <li>
+                                 <a href="contact.html">Əlaqə</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+             <div class="line"></div>
+             <div class="bottom">
+                 <div class="item">Bütün hüquqlar qorunur - <span>Lucky Office Support</span></div>
+                 <div class="item">Powered by <span>Proton.az</span></div>
+             </div>
+         </div>
+     </footer>
+ 
+     <div class="search_overlay">
+         <div class="form__group field">
+             <input placeholder="" type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+             <label for="name" class="form__label">Sorğunu daxil edin</label>
+           </div>
+           <div class="exit_btn">
+             <img loading="lazy" src="src/images/icon/icons8-cancel.svg" alt="cancel">
+           </div>
+      </div>
+     
+      <div class="menu_overlay">
+        <nav>
+           <ul>
+            <li>
+                <a href="./about_us.html">Haqqımızda</a>
+            </li>
+            <li>
+                <a href="new_products.html">Yeni</a>
+            </li>
+            <li>
+                <a href="">Endirimlər</a>
+            </li>
+            <li>
+                <a href="">Ən çox satılanlar</a>
+            </li>
+            <li>
+                <a href="">Şərtlər</a>
+            </li>
+            <li>
+                <a href="contact.html">Əlaqə</a>
+            </li>
+           </ul>
+        </nav>
+    
+        <div class="exit_btn">
+            <img loading="lazy" src="src/images/icon/icons8-cancel.svg" alt="cancel">
+          </div>
+     </div>
+     
+      <button id="myBtn" title="Go to top">▲</button>
+  
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      <script src="src/Semantic-UI-CSS-master/semantic.min.js"></script>
+      <script src="src/Convenient-Pagination-Plugin-With-Bootstrap-And-jQuery-UI-Pagination-js/dist/pagination.js"></script>
+      <script src="src/js/button.js"></script>
+      <script src="./src/js/cards.js"></script>
+      <script src="./src/js/office_items.js"></script>
+</body>
+</html>

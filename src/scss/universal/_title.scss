@@ -1,0 +1,46 @@
+.section_title {
+    text-align: center;
+    position: relative;
+    h2 {
+        font-weight: normal;
+        font-size: 25px;
+    }
+    .line {
+        margin: 0 auto;
+        height: 4px;
+        width: 30px;
+        border-radius: 8px;
+        background-color: $green;
+        text-align: center;
+    }
+    .path {
+        margin-top: 20px;
+        color: #303040;
+    }
+}   
+
+.white {
+    color:white;
+    &::after {
+        background-color:white;
+    }
+}
+
+.section_title.list {
+    &::after {
+       content: url('../../images/pattern/leaf-title.png');
+       position: absolute; 
+       top: 50%;
+       left: 50%;
+       transform: translate(-50% , -50%);
+   }    
+   }
+
+@media(max-width: 767px) {
+    .section_title h2 {
+        font-size: 35px;
+    }
+}
+
+
+

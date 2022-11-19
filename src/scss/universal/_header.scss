@@ -1,0 +1,287 @@
+header {
+    height: 270px;
+    width: 100%;
+    background-color: $main;
+    padding: 60px 0;
+    position: relative;
+    z-index: 5;
+    .search_btn {
+        display: none;
+    }
+    &::after {
+        content: url('../../images/pattern/leaf-header-1.png');
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .top {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        button {
+            &:nth-child(2) {
+                background-color: white;
+                a {
+                    color: black;
+                }
+                &:hover {
+                    a {
+                        color:white;
+                    }
+                }
+            }
+            margin-right: 10px;
+            background-color: transparent;
+            border: white 2px solid;
+            padding: 10px;
+            border-radius: 8px;
+            transition: .6s all;
+            color: white;
+            cursor: pointer;
+            a {
+                width: 100%;
+                height: 100%;
+                color: white;
+                text-decoration: none !important;
+            }
+            &:hover {
+                background-color: $green;
+                border: $green 2px solid;;
+            }
+        }
+    }
+    .middle {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search_input {
+            position: relative;
+
+            &::after {
+                content: url('../../images/icon/search.svg');
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                right: 3%;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+
+            }
+        }
+        input {
+            margin-right: 10px;
+            background-color: transparent;
+            border: white 2px solid;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            width: 700px;
+            outline: none;
+            &::placeholder {
+                color:white;
+                font-size: 16px;
+            }
+        }
+
+        .icons {
+            display: flex;
+            .icon {
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+                &:nth-child(1) {
+                    &::after {
+                        display: none;
+                    }
+                }
+                position: relative;
+                transition: .6s all;
+                cursor: pointer;
+                &:hover {
+                    transform: translateY(-5px);
+                }
+                    margin-right: 15px;
+                &::after {
+                    content: '1';
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 100%;
+                    background-color: red;
+                    color: white;
+                    top: -10px;
+                    right: -10px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-start;
+        .ui.menu .item:before {
+            content: url('../images/icon/category.svg') !important ;
+            margin-right: 30px ;
+        }
+        .ui.menu {
+            background-color: $green;
+            border-radius: 0 ;
+            transition: .3s all;
+            .menu {
+                transition: .3s opacity;
+            }
+        }
+        .category_btn { 
+            text-align: left;
+            cursor: pointer;
+            position: relative;
+            padding: 25px 0 25px 100px !important;
+            width: 30rem !important;        
+            background-color: $green !important;
+            color:white !important;
+           
+
+        }
+        font-size: 18px;
+        nav {
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                li {
+                    margin-right: 35px;
+                    transition: .6s all;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+                a {
+                    font-size: 18px;
+                    color:white;
+                    text-decoration: none;
+                
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1199px) {
+    
+    header .bottom .category_btn {
+        padding: 25px 0 25px 25px !important;
+        width: 250px  !important;
+    }
+    header .bottom nav ul li {
+        margin-right: 15px;
+    }
+    header .middle input {
+        width: 550px;
+    }
+}
+
+
+
+@media(max-width: 975px) {
+    header .middle input {
+        width: 400px;
+    }
+    header .bottom nav {
+        padding-left: 5px; 
+    }
+
+}
+
+
+@media(max-width: 767px) {
+    .menu_btn {
+        display: block;
+    }
+    .search_btn {
+        display: block;
+    }
+    header .middl {
+        justify-content: space-evenly;
+    }
+    header .middle .search_input::after {
+        right: 5%;
+    }
+    header .middle input {
+        width: 250px;
+    }
+    header .bottom nav  {
+        display: none;
+    }
+
+    header {
+        .middle {
+            a {
+                img {
+                   &:nth-child(1) {
+                    margin-right: 10px;
+                   }
+                }
+            }
+        }
+    }
+   
+   
+}
+
+
+@media(max-width: 575px) {
+
+    header {
+        .search_btn {
+            display: block;
+            bottom:auto;
+        }
+    }
+    .bottom {
+        width: 100%;
+       
+        .ui.menu .item:before {
+            position: static;
+        }
+        .ui.menu {
+            width: 100%;
+            transition: .3s all;
+            .menu {
+                transition: .3s opacity;
+            }
+        }
+        .category_btn { 
+            font-size: 1em;
+            justify-content: center;
+            margin:  0 auto;
+        }
+        font-size: 18px;
+    }
+    
+    .ui.simple.dropdown:hover>.menu>.item:hover>.menu, .ui.simple.dropdown>.menu>.item:active>.menu {
+        position: static;
+      }
+   
+    header .top {
+        right: 0;
+    }
+    header .middle .search_input {
+        display: none;
+    }
+}

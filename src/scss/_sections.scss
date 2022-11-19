@@ -1,0 +1,87 @@
+.sections {
+    min-height: 600px;
+    width: 100%;
+    padding: 55px 0;
+    background: $main;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: url('../images/pattern/leaf-category-left-1.png');
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .list {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            font-size: 28px;
+            position: absolute;
+            font-weight: normal;
+            top: 20px;
+            left: 20px;
+        }
+        .item_1 {
+            margin-right: 25px;
+            // position: relative;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .item_2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            .item {
+                h3 {
+                    font-size: 21px;
+                    width: 75%;
+                }
+                &:nth-child(2) , &:nth-child(3) {
+                 h3 {
+                    left:auto;
+                    right: 10px;
+                 }   
+                }
+            }
+        }
+        .item_1 , .item_2 .item {
+            h3 {
+                transition: .5s all;
+                cursor: pointer;
+            }
+            position: relative;
+            &::after {
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: black;
+                opacity: 0;
+                content:'';
+                transition: .3s all;
+            }
+            &:hover {
+                &::after {
+                    opacity: .5;
+                }
+                h3 {
+                    z-index: 1000;
+                    right: auto;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50% , -50%);
+                    color: white;
+                }
+            }
+        }
+    }
+}

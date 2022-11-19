@@ -1,0 +1,122 @@
+
+.cards_list {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    a {
+        margin-right: 25px;
+    }
+    .card {
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            img {
+                transform: translateY(-5px);
+            }
+        }
+        color: #212A34;
+        text-align: center;
+        margin-right: 25px;
+        position: relative;
+        width: 320px;
+        min-height: 550px;
+        padding: 17px;
+        background-color: white;
+        img[alt=favorite] {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            transition: .3s all;
+            &:hover {
+                transform: scale(1.08);
+            }
+        }
+        img[alt=product] {
+            margin: 0 auto;
+            transition: .6s all;
+            margin-top: 15%;
+            width: 200px;
+            height: 250px;
+        }
+        &:nth-last-child(1) {
+        margin-right: 0px;
+        }
+        .products_title {
+            margin-top: 50px;
+        }
+        .price {
+            margin-top: 35px;
+            span    {
+                margin-left: 10px;
+                text-decoration: line-through;
+            }
+        }
+        button {
+            cursor: pointer;
+            color: #6B6B6C;
+            padding: 15px 50px;
+            margin-top: 23px;
+            background-color: transparent;
+            border: 2px #C6C6C6 solid;
+            border-radius: 8px;
+            transition: .6s all;
+            &:hover {
+                background: $main;
+                color: white;
+                border: 2px $main solid;
+            }
+        }
+    }
+}
+
+.recommend {
+    &::after {
+        content:'Tövsiyyə edilir';
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        padding: 10px 13px;
+        background: $green;
+        color: white;
+        border-radius:8px;
+    }
+}
+
+.new {
+    &::after {
+        content:'Yeni';
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        padding: 10px 13px;
+        background: $main;
+        color: white;
+        border-radius:8px;
+    }
+}
+
+
+@media(max-width: 1199px) {
+    
+    .cards_list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        .card {
+            margin: 0;
+            margin-top: 15px;
+        }
+    }
+    .recommend::after {
+        padding: 7px 10px;
+    }
+}
+
+
+
+
+
+
+
+

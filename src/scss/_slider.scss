@@ -1,0 +1,22 @@
+.slider {
+    padding: 0 100px;
+    margin-top: 45px;
+    .slick-next {
+        right: 25px ;
+        z-index: 1;
+        &::before {
+            content: url('../images/icon/arrow-right.svg');
+        }
+    }
+    .slick-prev {
+        left: 25px;
+        z-index: 1;
+        transform: rotate(-180deg);
+        &::before {
+            content: url('../images/icon/arrow-right.svg');
+        }
+    }
+    slick-slide {
+        position: absolute;
+    }
+}

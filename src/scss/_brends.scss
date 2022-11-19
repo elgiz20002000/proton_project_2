@@ -1,0 +1,35 @@
+.brends {
+    margin-top: 50px;
+    position: relative;
+    .list {
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+    .slick-dots {
+        position: absolute;
+        left: -4%; 
+        button {
+            &::before {
+                opacity: 1;
+                content: '' ;
+                width: 12px;
+                height: 12px;
+                border-radius: 100%;
+                background: $main;
+            }
+        }
+        li.slick-active {
+            button {
+                &::before {
+                    background: $green;
+                }
+            }
+        }
+    }
+    .slick-track {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+}
