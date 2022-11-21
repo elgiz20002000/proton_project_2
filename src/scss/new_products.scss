@@ -41,7 +41,14 @@ html {
 }
 #pagination-1 {
     margin-top: 25px;
-    text-align: center;
+    text-align: center; 
+    ul {
+        display: flex;
+        align-items: baseline;
+    }
+    li {
+        height: min-content;
+    }
 }
 
 
