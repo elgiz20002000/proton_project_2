@@ -16,11 +16,6 @@ html {
 }
 
 
-.container {
-    width: 100%;
-    padding: 0 50px;
-}
-
 @import './universal/color';
 @import './universal/button';
 @import './universal/menu_overlay';
@@ -44,7 +39,11 @@ header {
 .product {
     .cards_list {
         a {
-            margin-right: 0;
+            margin-right: 0;;
+        }
+        .card {
+            border:none;
+            width: 100%;
         }
     }
     padding: 80px 0;
@@ -119,18 +118,6 @@ header {
 
 
 
-.menu_btn {
-    position: absolute;
-    left: 10px;
-    top: 20px;
-}
-.search_btn {
-    display: none;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
-
 
 
 
@@ -140,9 +127,12 @@ header {
 
 
 
-@media(max-width: 975px) {
+@media(max-width: 991px) {
     .product .product_items {
         flex-direction: column;
+        .item_2 {
+            margin-left: 0;
+        }
     }
     .product .item_2 , .product .item_1 {
         text-align: center;
@@ -156,9 +146,7 @@ header {
         }
     }
    
-    .container {
-        padding: 0 10px;
-    }
+   
 }
 
 

@@ -1,4 +1,16 @@
 header {
+    .menu_btn {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+    }
+    .search_btn {
+        display: none;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    
     height: 270px;
     width: 100%;
     background-color: $main;
@@ -76,7 +88,7 @@ header {
             background-color: transparent;
             border: white 2px solid;
             color: white;
-            padding: 15px 25px;
+            padding: 15px 7% 15px 3%;
             border-radius: 8px;
             width: 700px;
             outline: none;
@@ -130,9 +142,12 @@ header {
         bottom: 0;
         display: flex;
         justify-content: flex-start;
-        .ui.menu .item:before {
-            content: url('../images/icon/category.svg') !important ;
-            margin-right: 30px ;
+        .ui.simple.dropdown:hover>.menu>.item:hover>.menu, .ui.simple.dropdown>.menu>.item:active>.menu {
+            height: 18rem;
+            top: -100% !important;
+        }
+        .ui.simple.dropdown:hover>.menu> .item:nth-child(1):hover>.menu, .ui.simple.dropdown>.menu>.item:nth-child(1):active>.menu {
+            top: 0% !important;
         }
         .ui.menu {
             background-color: $green;
@@ -140,7 +155,9 @@ header {
             transition: .3s all;
             .menu {
                 transition: .3s opacity;
+                height: 18rem;               
             }
+         
         }
         .category_btn { 
             text-align: left;
@@ -171,7 +188,7 @@ header {
                     }
                 }
                 a {
-                    font-size: 18px;
+                    font-size: 1rem;
                     color:white;
                     text-decoration: none;
                 
@@ -198,7 +215,7 @@ header {
 
 
 
-@media(max-width: 975px) {
+@media(max-width: 991px) {
     header .middle input {
         width: 400px;
     }
@@ -246,6 +263,9 @@ header {
 
 
 @media(max-width: 575px) {
+    .slider .slick-slide img {
+        width: auto;
+    }
 
     header {
         .search_btn {

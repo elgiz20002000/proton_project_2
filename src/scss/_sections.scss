@@ -27,18 +27,17 @@
         }
         .item_1 {
             margin-right: 25px;
-            // position: relative;
+
             display: flex;
             justify-content: center;
             align-items:center;
         }
         .item_2 {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
             gap: 20px;
-            justify-content: center;
-            align-items: center;
             .item {
+                background: white;
                 h3 {
                     font-size: 21px;
                     width: 75%;

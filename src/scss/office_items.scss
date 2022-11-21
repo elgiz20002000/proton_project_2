@@ -16,12 +16,6 @@ html {
 }
 
 
-.container {
-    width: 100% ;
-    padding: 0 50px ;
-    max-width: none ;
-}
-
 @import './universal/color';
 @import './universal/button';
 @import './universal/menu_overlay';
@@ -49,20 +43,9 @@ footer {
     margin: 0;
 }
 
-.menu_btn {
-    position: absolute;
-    left: 10px;
-    top: 20px;
-}
-.search_btn {
-    display: none;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
 
 .office_items {
-    padding: 80px 0;
+    padding: 10rem 0;
     background: #F8F8F8;
     &_wrapper {
         position: relative;
@@ -70,9 +53,7 @@ footer {
         .item_1 {
             box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
             margin-right: 25px;
-            flex: 0.3;
-            width: 50%;
-            padding: 40px;
+            padding: 2rem;
             background: white;
             height: max-content;
             .line_g {
@@ -93,10 +74,11 @@ footer {
                 }
             }
             .price_range {
+                width: 270px;
                 margin-top: 15px;
                 position: relative;
                 background: $main ;
-                height: 7px;
+                height: 5px;
                 border:none;
             }
             .ui-slider-range   {
@@ -181,8 +163,6 @@ footer {
             }
         }
         .item_2 {
-            width: 50%;
-            flex: 1;
             .sort_types {
                 padding-left: 20px;
                 padding-right: 40px;
@@ -227,7 +207,7 @@ footer {
    
 }
 
-@media(max-width: 975px) {
+@media(max-width: 992px) {
  
     .office_items_wrapper .item_1 .ranges .range input {
         width: 75px;
@@ -238,30 +218,34 @@ footer {
     .office_items_wrapper {
         flex-direction: column;
         align-items: center; 
-        .item_1 {
+        .item_1  {
+            .section_title {
+                h2 {
+                    text-align: center;
+                }
+                .line {
+                    margin: 0 auto;
+                }
+            }
             margin-right: 0;
             margin-top: 25px;
             width: 90%;
+            .price_range {
+                width: 100%;       
+            }
         }
-        .item_2 {
-            width: 90%;
+        .sort_types {
+            .type {
+                margin-right: 0;
+                text-align: center;
+            }
         }
-    }
-    .container {
-        padding: 0 10px;
     }
 }
 
 
 @media(max-width: 767px) {
-    .office_items_wrapper .item_1 .section_title {
-        h2 {
-            text-align: center;
-        }
-        .line {
-            margin: 0 auto;
-        }
-    }
+  
 
 }
 
@@ -275,6 +259,8 @@ footer {
         width: 100%;
     }
     .office_items_wrapper .item_2 .sort_types .type {
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 }

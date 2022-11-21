@@ -16,10 +16,7 @@ html {
 }
 
 
-.container {
-    width: 100%;
-    padding: 0 50px;
-}
+
 
 @import './universal/color';
 @import './universal/button';
@@ -69,11 +66,8 @@ html {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    .map {
-        flex: 1;
-    }
     form {
-        flex: 1;
+        flex: 0.9;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -94,6 +88,7 @@ html {
             border-radius: 8px;
         }
         textarea {
+            outline-color: $main;
             margin-top: 25px;
             width: 100%;
             padding: 10px;
@@ -147,10 +142,7 @@ html {
             width: 60%;
         }
     }
-    
-    .container {
-        padding: 0 20px;
-    }
+
 }
 
 
@@ -177,10 +169,7 @@ html {
         }
     }
     
-   
-    .container {
-        padding:  0 10px;
-    }
+
 }
 
 

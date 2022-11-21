@@ -1,6 +1,10 @@
 .slider {
+    text-align: center;
     padding: 0 100px;
     margin-top: 45px;
+    img {
+        width: 100%;
+    }
     .slick-next {
         right: 25px ;
         z-index: 1;

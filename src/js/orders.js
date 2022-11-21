@@ -134,7 +134,6 @@ const addOrders = (sort_time , sort_status) => {
                 </div>
             </td>
             <td class="reorder">
-                <span>Təkrar sifariş</span>
                 <button>
                     Təkrar sifariş
                 </button>

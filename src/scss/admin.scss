@@ -16,10 +16,7 @@ html {
 }
 
 
-.container {
-    width: 100%;
-    padding: 0 50px;
-}
+
 
 @import './universal/color';
 @import './universal/button';
@@ -69,7 +66,7 @@ html {
             input {
                 outline-color: $main;
                 margin-top: 10px;
-                width: 650px;
+                width: 500px;
                 padding: 17px 10px;
                 border: 1px #CED4DA solid;
                 border-radius: 8px;
@@ -104,14 +101,11 @@ html {
     }
   
     
-    .container {
-        padding: 0 20px;
-    }
 }
 
 
 
-@media(max-width: 975px) {
+@media(max-width: 991px) {
    
 }
 
@@ -129,11 +123,8 @@ html {
     .admin .admin_form form input {
         width: 500px;
     }
-    .container {
-        padding:  0 10px;
-    }
-}
 
+}
 
 @media(max-width: 575px) {
     .admin .admin_form form input {

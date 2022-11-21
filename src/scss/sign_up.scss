@@ -16,11 +16,6 @@ html {
 }
 
 
-.container {
-    width: 100%;
-    padding: 0 50px;
-}
-
 @import './universal/color';
 @import './universal/button';
 @import './universal/menu_overlay';
@@ -38,8 +33,6 @@ header .middle .search_input::after {
 header {
     &::after {
         content: url('../images/pattern/leaf-header-1.png');
-        // overflow: hidden;
-        // height: 100%;
     }
 }
 
@@ -87,6 +80,7 @@ header {
         text-align: center;
         position: relative;
         .wrapper {
+            width: 100%;
             position: absolute;
             top: 10%;
 
@@ -96,7 +90,7 @@ header {
             display: flex;
             justify-content: center;
             align-items:center;
-            flex-wrap: wrap;
+            flex-direction: column;
             .inputs {
                 display: grid;
                 grid-template: repeat(4  , 1fr) / repeat(2 , 1fr);
@@ -166,30 +160,19 @@ header {
 
 
 
-.menu_btn {
-    position: absolute;
-    left: 10px;
-    top: 20px;
-}
-.search_btn {
-    display: none;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
 
 
 
 
 @media(max-width: 1199px) {
-    .sign_section .item_2 form input {
-        width: 265px;
+    .sign_section .item_2 form .form-floating input {
+        width: 240px;
     }
 }
 
 
 
-@media(max-width: 975px) {
+@media(max-width: 991px) {
     .sign_section .item_2 {
         padding: 0;
         min-height: 500px;
@@ -219,9 +202,7 @@ header {
     .sign_section .item_2 form {
         padding: 0 80px;
     }
-    .container {
-        padding: 0 10px;
-    }
+
     .sign_section .item_2 form  {
         .form-floating {
             input {

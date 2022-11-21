@@ -16,10 +16,7 @@ html {
 }
 
 
-.container {
-    width: 100%;
-    padding: 0 50px;
-}
+
 
 @import './universal/color';
 @import './universal/button';
@@ -44,6 +41,16 @@ header {
 
 .basket {
     padding: 80px 0 ;
+}
+
+.cards_list {
+    a {
+        .card {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+  
 }
 
 .products_table {
@@ -93,6 +100,7 @@ header {
     }
 }
 table {
+    margin-right: 3rem;
     span.field_name {
         display: none;
     }
@@ -203,7 +211,7 @@ table {
 
 
 
-@media(max-width: 975px) {
+@media(max-width: 991px) {
     .basket_wrapper {
         margin-top: 20px;
     }
@@ -213,9 +221,7 @@ table {
     .products_table {
         flex-direction: column;
     }
-    .container {
-        padding: 0 10px;
-    }
+
 }
 
 
@@ -237,6 +243,7 @@ table {
         height: 150px;
     }
     table {
+        margin-right: 0;
         thead {
             display: none;
         }
@@ -246,9 +253,7 @@ table {
             td {
                 display: flex;
                 flex-direction: column;
-                .counter { 
-
-                }
+              
                 .field_name {
                     display: block;
                     font-size: 18px;

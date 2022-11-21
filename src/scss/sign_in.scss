@@ -16,10 +16,7 @@ html {
 }
 
 
-.container {
-    width: 100%;
-    padding: 0 50px;
-}
+
 
 @import './universal/color';
 @import './universal/button';
@@ -75,12 +72,13 @@ html {
         text-align: center;
         position: relative;
         .wrapper {
+            width: 100%;
             position: absolute;
             top: 25%;
 
         }
         form {
-            padding: 0 270px;
+            padding: 0 35%;
             margin-top: 15px;
             display: flex;
             flex-direction: column;
@@ -149,30 +147,20 @@ html {
 
 
 
-.menu_btn {
-    position: absolute;
-    left: 10px;
-    top: 20px;
-}
-.search_btn {
-    display: none;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
 
 
 
 
 @media(max-width: 1199px) {
+    .sign_section .item_2 form  {
+        padding: 0 20% ;
+    }
     .sign_section .item_2 .wrapper {
         top: 20%;
         left: 50%;
         transform: translateX(-50%);
     }
-    .sign_section .item_2 form {
-        padding: 0 150px;
-    }
+   
     .sign_section .item_2 form  {
         .form-floating {
             input {
@@ -185,15 +173,17 @@ html {
 
 
 
-@media(max-width: 975px) {
+@media(max-width: 991px) {
+    .sign_section .item_2 form  {
+        padding: 0 25% ;
+    }
+
     .sign_section .item_2 {
         padding: 0;
         padding-left: 70px;
         min-height: 500px;
         width: 100%;
-    }
-    .sign_section .item_2 form {
-        padding: 0 115px;
+   
     }
     .sign_section .item_2 form  {
         .form-floating {
@@ -212,12 +202,6 @@ html {
 
 
 @media(max-width: 767px) {
-    .sign_section .item_2 form {
-        padding: 0 70px;
-        button {
-            width: 70%;
-        }
-    }
    
 }
 

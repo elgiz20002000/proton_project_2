@@ -6,16 +6,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .item_1 , .item_2 {
-            flex: 1;
-        }
+
         .item_1 {
             h3 {
                 font-size: 30px;
                 font-weight: 400;
             }
             .description {
-                padding: 0 10px;
                 margin-top: 30px;
                 font-weight: 300;
                 line-height: 20px;

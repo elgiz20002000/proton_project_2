@@ -15,13 +15,14 @@
                 width: 12px;
                 height: 12px;
                 border-radius: 100%;
-                background: $main;
+                background: $green;
+             
             }
         }
         li.slick-active {
             button {
                 &::before {
-                    background: $green;
+                    background: $main;
                 }
             }
         }

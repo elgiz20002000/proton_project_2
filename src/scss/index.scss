@@ -16,10 +16,6 @@ html {
 }
 
 
-.container {
-    width: 100%;
-    padding: 0 50px;
-}
 
 @import './universal/color';
 @import './universal/button';
@@ -36,6 +32,8 @@ html {
 @import './sections_green'; 
 @import './brends';
 
+
+
 header .middle .search_input::after {
     content: url('../images/icon/search.svg');
 }
@@ -45,17 +43,6 @@ header {
         overflow: hidden;
         height: 100%;
     }
-}
-.menu_btn {
-    position: absolute;
-    left: 10px;
-    top: 20px;
-}
-.search_btn {
-    display: none;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
 }
 
 
@@ -93,10 +80,7 @@ header {
         }
     }
     
-   
-    .container {
-        padding: 0 20px;
-    }
+
     .sections .list {
         .item_2 {
             gap: 10px;
@@ -106,7 +90,7 @@ header {
 
 
 
-@media(max-width: 975px) {
+@media(max-width: 991px) {
     .brends .list {
         margin-left: 50px;
     }
@@ -118,9 +102,7 @@ header {
 
 @media(max-width: 767px) {
 
-    .container {
-        padding:  0 10px;
-    }
+
     .slider {
         padding: 0 15px;
     }
@@ -128,6 +110,10 @@ header {
 
 
 @media(max-width: 575px) {
+    .sections .list .item_2 {
+        width: 100%;
+        grid-template-columns: repeat(1 , 1fr);
+    }
     .brends .slick-initialized .slick-slide {
         margin-left: 50px;
         position: relative;
@@ -166,4 +152,5 @@ header {
         margin-left: 15px;
         position: relative;
     }
+ 
 }

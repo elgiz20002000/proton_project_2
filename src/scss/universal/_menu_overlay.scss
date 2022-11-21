@@ -11,8 +11,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.6);
-    background-color: rgba(0,0,0,.6);
+    background: $main ;
     transition: .6s opacity , visibility , transform;
 
     nav {
@@ -28,11 +27,12 @@
             align-items: center;
             flex-direction: column;
             li {
+                list-style-type: none;
                 text-align: center;
                 margin-top: 30px;
                 a {
                     text-decoration: none;
-                    font-size: 35px;
+                    font-size: 30px;
                     color: white;
                 }
             }
