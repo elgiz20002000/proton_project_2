@@ -215,6 +215,14 @@ header {
 
 
 @media(max-width: 575px) {
+    .sign_section
+    {
+        padding-top: 0;
+        .item_2 {
+            border-radius: 0;
+            padding: 0;
+        }
+    }
     .sign_section .item_2 form  {
         .form-floating {
             input {
