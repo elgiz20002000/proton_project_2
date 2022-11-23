@@ -1,3 +1,5 @@
+import products from '../products.json' assert {type: 'json'}
+
 document.addEventListener('DOMContentLoaded' , async () => {
 
     var itemsCount = 300;
@@ -136,14 +138,7 @@ const sortData = (sortType , sorting_data) => {
     sort_cost = document.querySelectorAll('.sort_types .type select')[1]
 
 
-    const data = await fetch('http://127.0.0.1:5500/src/products.json', {
-        method: 'GET',
-        headers: {
-        'Content-Type': 'application/json'
-        }
-    })
-    .then(res => res.json())
-    .then(data => data.products)
+    const data = products.products
 
     
 
